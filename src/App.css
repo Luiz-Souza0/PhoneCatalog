@@ -1,0 +1,41 @@
+.Button_NewPhone {
+  background-color: #b6b6b6;
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid black;
+
+}
+
+.Button_NewPhone:hover {
+  background-color: #e6e6e6;
+  color: #000000;
+}
+
+.Button_Excluir {
+  background-color: #00000000;
+  color: #301f7c;
+  text-decoration:underline;
+  border: none;
+  cursor:pointer;
+  font-size: medium;
+}
+
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
