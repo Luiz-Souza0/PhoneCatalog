@@ -24,7 +24,7 @@ The Backend was made with node.js/express using a non-relational database (`Mong
 
 ```ini
 
-- Clone the project with `git clone https://github.com/alura/techguide.git`
+- Clone the project with `git clone https://github.com/Luiz-Souza0/PhoneCatalog.git`
 
 ```
 
