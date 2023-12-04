@@ -2,7 +2,7 @@ import './App.css';
 import { Container, Button } from 'react-bootstrap';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-
+import Swal from 'sweetalert2'
 import api from './api/api';
 import NewPhone from './Pages/NewPhone';
 import UpdatePhone from './Pages/UpdatePhone';
