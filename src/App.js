@@ -24,14 +24,20 @@ function App() {
 
   const handleDeletePhone = async (phoneId) => {
     try {
-      await api.delete(`/phone/${phoneId}`);
-      setPhone((prevPhones) => prevPhones.filter((phone) => phone._id !== phoneId));
+      Swal.fire({
+        title: "Do you want to delete?",
+        showCancelButton: true,
+        confirmButtonText: "Delete"
+      }).then((result) => {
+        if (result.isConfirmed) {
+          api.delete(`/phone/${phoneId}`);
+          setPhone((prevPhones) => prevPhones.filter((phone) => phone._id !== phoneId));
+        }
+      });
     } catch (error) {
       console.error(`Error while deleting the phone with ID ${phoneId}:`, error);
     }
   }
-
-
 
   return (
     <Router>
